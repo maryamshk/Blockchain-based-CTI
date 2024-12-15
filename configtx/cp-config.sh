@@ -8,7 +8,7 @@ fi
 
 
 ORIGIN=policy
-SRC=$PWD/../setup/config/simple-two-org/$ORIGIN.$VER
+SRC=$PWD/../setup/config/five-org/$ORIGIN.$VER
 
 echo $SRC
 
@@ -17,6 +17,6 @@ if [ ! -d $SRC ]; then
     exit
 fi
 
-cp $SRC/*.yaml $PWD/simple-two-org
+cp $SRC/*.yaml $PWD/five-org
 
 echo "Done."

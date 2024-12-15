@@ -2,15 +2,15 @@
 Updated with a policy that allows any member of the Org1 to make changes to the config
 
 # Testing
-1. Clean up the orderer by executing script in orderer/simple-two-org
+1. Clean up the orderer by executing script in orderer/five-org
    > clean.sh all
-2. Copy configtx.yaml to orderer/simple-two-org
+2. Copy configtx.yaml to orderer/five-org
 3. Initialize the orderer & launch it. Ignore the warnings
    > init.sh
    > orderer
 
-4. In a different terminal switch to folder peer/simple-two-org
-5. Clean up the peer by executing script in peer/simple-two-org
+4. In a different terminal switch to folder peer/five-org
+5. Clean up the peer by executing script in peer/five-org
    > clean.sh all
 6. Setup the environment
    > .  env.sh

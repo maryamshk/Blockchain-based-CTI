@@ -23,7 +23,7 @@ General:
                 Keystore:
 
     # Directory for the private crypto material needed by the
-    # orderer. 
+    # orderer.
     LocalMSPDir: ./crypto-config/ordererOrganizations/acme.com/orderers/orderer.acme.com/msp
 
     # Identity to register the local MSP material with the MSP
@@ -90,12 +90,12 @@ General:
 FileLedger:
 
     # Location: The directory to store the blocks in.
-    # Windows - if you get a LevelDb error in launching orderer use the VM file 
-    # by uncommenting the following line - comment the Location: ./ledger 
-    Location: /home/vagrant/ledgers/orderer/simple-two-orgs/ledger
+    # Windows - if you get a LevelDb error in launching orderer use the VM file
+    # by uncommenting the following line - comment the Location: ./ledger
+    Location: /home/vagrant/ledgers/orderer/five-orgs/ledger
 
     # The prefix to use when generating a ledger directory in temporary space.
-    Prefix: hyperledger-fabric-ordererledger    
+    Prefix: hyperledger-fabric-ordererledger
 
 
 
@@ -112,7 +112,7 @@ Debug:
     # for this orderer to be written to a file in this directory
 
     # BroadcastTraceDir: ./trace
-    BroadcastTraceDir: 
+    BroadcastTraceDir:
 
     # DeliverTraceDir when set will cause each request to the Deliver service
     # for this orderer to be written to a file in this directory

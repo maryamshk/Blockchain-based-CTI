@@ -1,8 +1,8 @@
 echo "===== Cleaning the configtx ======"
-rm ./simple-two-org/*.tx  2> /dev/null
-rm ./simple-two-org/*.block 2> /dev/null
-rm -rf ./simple-two-org/crypto-config 2> /dev/null
-rm -rf ./simple-two-org/temp
+rm ./five-org/*.tx  2> /dev/null
+rm ./five-org/*.block 2> /dev/null
+rm -rf ./five-org/crypto-config 2> /dev/null
+rm -rf ./five-org/temp
 
 
 echo "Done."

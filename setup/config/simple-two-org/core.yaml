@@ -272,7 +272,7 @@ peer:
                 KeyStore:
 
     # Path on the file system where peer will find MSP local configurations
-    mspConfigPath: ../../orderer/simple-two-org/crypto-config/peerOrganizations/acme.com/users/Admin@acme.com/msp
+    mspConfigPath: ../../orderer/five-org/crypto-config/peerOrganizations/acme.com/users/Admin@acme.com/msp
 
     # Identifier of the local MSP
     # ----!!!!IMPORTANT!!!-!!!IMPORTANT!!!-!!!IMPORTANT!!!!----

@@ -12,7 +12,7 @@ cd $ROOT_FOLDER/configtx
 ./clean.sh all
 
 #3. orderer
-cd $ROOT_FOLDER/orderer/simple-two-org
+cd $ROOT_FOLDER/orderer/five-org
 ./clean.sh all
 
 cd $ROOT_FOLDER/orderer/multi-org
@@ -22,7 +22,7 @@ cd $ROOT_FOLDER/orderer/multi-org-ca
 ./clean.sh all
 
 #4. peer
-cd $ROOT_FOLDER/peer/simple-two-org
+cd $ROOT_FOLDER/peer/five-org
 ./clean.sh all
 
 cd $ROOT_FOLDER/peer/multi-org
@@ -59,6 +59,5 @@ rm -rf $ROOT_FOLDER/fabric-samples
 # Cleanup $GOPATH/pkg
 rm -rf $GOPATH/pkg
 
-# cleanup $GOPATH/src/ all except chaincode_example02 
+# cleanup $GOPATH/src/ all except chaincode_example02
 rm -rf $GOPATH/src/g*
-

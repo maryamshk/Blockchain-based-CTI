@@ -1,0 +1,62 @@
+OrdererOrgs:
+  - Name: SecureOrderer
+    Domain: SecureOrderer.com
+    Specs:
+      - Hostname: orderer
+
+
+PeerOrgs:
+  - Name: Org1
+    Domain: branch1.com
+    Specs:
+      - Hostname: firstOrg
+        CommonName: firstOrg
+    Template:
+      Count: 2                         #number of peers
+    Users:
+      Count: 2
+
+
+  - Name: Org2
+    Domain: branch2.com
+    Specs:
+      - Hostname: secOrg
+        CommonName: secOrg
+    Template:
+      Count: 1
+    Users:
+      Count: 2
+
+
+  - Name: Org3
+    Domain: branch3.com
+    Specs:
+      - Hostname: thirdOrg
+        CommonName: thirdOrg
+    Template:
+      Count: 2
+    Users:
+      Count: 2
+
+
+  - Name: Org4
+    Domain: branch4.com
+    Specs:
+      - Hostname: forthOrg
+        CommonName: forthOrg
+    Template:
+      Count: 2
+    Users:
+      Count: 3
+
+
+ # Peer configuration for branch2
+  - Name: Org5
+    Domain: branch5.com
+    Specs:
+      - Hostname: fifthOrg
+        CommonName: fifthOrg
+    Template:
+      Count: 1
+    Users:
+      Count: 2
